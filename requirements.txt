@@ -1,0 +1,6 @@
+pandas>=2.2
+pyarrow>=15
+scikit-learn>=1.4
+folium>=0.17
+pyproj>=3.6
+ipykernel

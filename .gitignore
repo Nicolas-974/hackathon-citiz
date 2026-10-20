@@ -1,0 +1,17 @@
+# Résultats intermédiaires : recalculés par les notebooks 01 à 05
+data/silver/
+
+# Doublons des données déjà copiées dans data/bronze/
+gtfs-koa1808/
+gtfs-koa1808.zip
+
+# Documents personnels ou fournis par les organisateurs (non diffusables)
+*.pdf
+CONTEXTE_HACKATHON_MICROSOFT_CITIZ_POUR_CLAUDE.md
+Brief_Hackathon_Microsoft_Citiz_Strategie*.md
+
+# Fichiers techniques Python / Jupyter / éditeurs
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+.venv/

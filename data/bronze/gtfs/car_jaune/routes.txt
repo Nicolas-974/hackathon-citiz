@@ -1,0 +1,17 @@
+agency_id,route_color,route_id,route_long_name,route_short_name,route_sort_order,route_text_color,route_type
+CAR JAUNE,26C4EC,11,St-Denis / St-Pierre,O2,5,FFFFFF,3
+CAR JAUNE,2E3092,13,St-Denis / St-Paul,O3,6,FFFFFF,3
+CAR JAUNE,FF7F00,16,St-Benoît / St-Pierre par le Grand Brûlé,S1,7,FFFFFF,3
+CAR JAUNE,960018,18,St-Benoît / St-Pierre par les Plaines,S2,8,FFFFFF,3
+CAR JAUNE,A5D152,2,St-Denis / St-Benoît,E1,1,000000,3
+CAR JAUNE,DB1702,20,Le Tampon / St-Pierre / St-Joseph,S3,9,FFFFFF,3
+CAR JAUNE,FF007F,22,St-Paul / St-Pierre par les Hauts,S4,10,FFFFFF,3
+CAR JAUNE,6C0277,24,St-Pierre / Entre-Deux,S5,11,FFFFFF,3
+CAR JAUNE,C9A0DC,26,Le Tampon / St-Joseph par Petite-Île,S6,12,FFFFFF,3
+CAR JAUNE,FFCD00,28,Aéroport Roland Garros / St-Pierre par les Plages,T,13,000000,3
+CAR JAUNE,A5D152,34,Express St-Denis / St-Benoît,E1X,1,000000,3
+CAR JAUNE,A9EAFF,35,Express St-Denis / St-Pierre,O1X,4,000000,3
+CAR JAUNE,FFCD00,36,Express Aéroport Roland Garros / St-Pierre,TX,13,000000,3
+CAR JAUNE,1FA055,4,St-Denis / St-Benoît par Campus,E2,2,FFFFFF,3
+CAR JAUNE,387049,6,St-Denis / St-André,E3,3,FFFFFF,3
+CAR JAUNE,A9EAFF,9,St-Denis / St-Pierre par Route des Tamarins,O1,4,000000,3

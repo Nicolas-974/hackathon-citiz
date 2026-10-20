@@ -1,0 +1,77 @@
+route_color,route_id,route_long_name,route_short_name,route_type
+0066FF,1,Saint-Paul ligne 1,1,3
+993300,10,Port - Possession ligne 10,10,3
+0000FF,11,Port - possession ligne 11,11,3
+00FF00,12,Port - possession ligne 12,12,3
+FF00FF,13,Port - possession ligne 13,13,3
+FF0000,14,Port - Possession ligne 14,14,3
+FF6600,15,Port - possession ligne 15,15,3
+008000,16,Port - possession ligne 16,16,3
+800080,17,Port - Possession ligne 17,17,3
+2E75B6,18,Port - Possession ligne 18,18,3
+FF9900,19,Port - Possession ligne 19,19,3
+CC0000,2,Saint-Paul ligne 2,2,3
+FFFF00,20,Port - Possession ligne 20,20,3
+00FFFF,21,Port - Possession ligne 21,21,3
+993300,22,Port - Possession ligne 22,22,3
+008080,23,Port - Possession ligne 23,23,3
+E5006D,24,Port - Possession ligne 24,24,3
+69C0AC,25,Port - Possession ligne 25,25,3
+CC4608,3,Saint-Paul ligne 3,3,3
+FFCC00,30,Saint-Leu ligne 30,30,3
+FF6600,31,Saint-Leu ligne 31,31,3
+800080,32,Saint-Leu ligne 32,32,3
+FF0000,33,Saint-Leu ligne 33,33,3
+00CCFF,34,Saint-Leu ligne 34,34,3
+008000,35,Saint-Leu ligne 35,35,3
+99CC00,36,Saint-Leu ligne 36,36,3
+9999FF,37,Saint-Leu ligne 37,37,3
+99CCFF,38,Saint-Leu ligne 38,38,3
+FF00FF,39,Saint-Leu ligne 39,39,3
+006600,4,Trois-Bassins ligne 4,4,3
+FF8080,40,Saint-Leu ligne 40,40,3
+0066FF,41,Saint-Leu ligne 41,41,3
+993300,42,Saint-Leu ligne 42,42,3
+00A295,43,Saint-Leu ligne 43,43,3
+B2B2B2,44,Saint-Leu ligne 44,44,3
+005680,45,Saint-Leu ligne 45,45,3
+C04F4C,5,Trois-Bassins ligne 5,5,3
+FF9900,50,Trois-Bassins ligne 50,50,3
+339966,51,Trois-Bassins ligne 51,51,3
+00CC00,52,Trois-Bassins ligne 52,52,3
+FF0000,53,Trois-Bassins ligne 53,53,3
+99CC00,60,Saint-Paul ligne 60,60,3
+FF0000,61,Saint-Paul ligne 61,61,3
+FF6600,62,Saint-Paul ligne 62,62,3
+FF3300,63,Saint-Paul ligne 63,63,3
+FDC300,64A,Saint-Paul ligne 64A,64A,3
+FDC300,64B,Saint-Paul ligne 64B,64B,3
+FDC300,64C,Saint-Paul ligne 64C,64C,3
+FDC300,64D,Saint-Paul ligne 64D,64D,3
+FDC300,64E,Saint-Paul ligne 64E,64E,3
+FDC300,64F,Saint-Paul ligne 64F,64F,3
+FDC300,64G,Saint-Paul ligne 64G,64G,3
+FDC300,64H,Saint-Paul ligne 64H,64H,3
+00B0F0,65,Saint-Paul ligne 65,65,3
+0000FF,66,Saint-Paul ligne 66,66,3
+CC99FF,67,Saint-Paul ligne 67,67,3
+CC3399,68,Saint-Paul ligne 68,68,3
+800080,69,Saint-Paul ligne 69,69,3
+99CCFF,70,Saint-Paul ligne 70,70,3
+66CCFF,71,Saint-Paul ligne 71,71,3
+33CCFF,72,Saint-Paul ligne 72,72,3
+00CCFF,73,Saint-Paul ligne 73,73,3
+0099CC,74,Saint-Paul ligne 74,74,3
+FF9900,75,Saint-Paul ligne 75,75,3
+FFCC00,76,Saint-Paul ligne 76,76,3
+FFCC66,77,Saint-Paul ligne 77,77,3
+FFCC99,78,Saint-Paul ligne 78,78,3
+548235,79,Saint-Paul ligne 79,79,3
+33CC33,80,Saint-Paul ligne 80,80,3
+009902,81,Saint-Paul ligne 81,81,3
+FF00FF,82,Saint-Paul ligne 82,82,3
+DEC800,83,Saint-Paul ligne 83,83,3
+968B28,84,Saint-Paul ligne 84,84,3
+007AA2,85,Saint-Paul ligne 85,85,3
+D04608,CH,Saint-Paul ligne CH,CH,3
+993300,LGO,Saint-Paul ligne LGO,LGO,3

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d3d062457f63abb7354c336dfd135edf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:9999;background:white;color:#222;padding:8px 10px;border:1px solid #999;border-radius:4px;font:12px sans-serif"><b>Carreaux isolés</b><div style="display:flex;align-items:center;gap:6px;margin:3px 0"><span style="display:inline-block;flex:none;width:10px;height:10px;border-radius:50%;background:purple"></span>Carreau habité à plus de 2000 m de tout arrêt</div></div>
+    
+            <div class="folium-map" id="map_d3d062457f63abb7354c336dfd135edf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d3d062457f63abb7354c336dfd135edf = L.map(
+                "map_d3d062457f63abb7354c336dfd135edf",
+                {
+                    center: [-21.060444740617122, 55.3027854687118],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_030faf41c302876ab35ece0c29b4231a = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 16,
+  "maxNativeZoom": 16,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_030faf41c302876ab35ece0c29b4231a.addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+            var circle_marker_60a6f21b75414379510a69f44df7a181 = L.circleMarker(
+                [-21.19034969124488, 55.35560343203882],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_a53fd4b2ce00f0ddc58a92dda258d9ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b96d69b680042f611f8335f784f4de94 = $(`<div id="html_b96d69b680042f611f8335f784f4de94" style="width: 100.0%; height: 100.0%;">Saint-Leu | 2 habitants | 2277 m de l'arrêt le plus proche</div>`)[0];
+                popup_a53fd4b2ce00f0ddc58a92dda258d9ef.setContent(html_b96d69b680042f611f8335f784f4de94);
+            
+        
+
+        circle_marker_60a6f21b75414379510a69f44df7a181.bindPopup(popup_a53fd4b2ce00f0ddc58a92dda258d9ef)
+        ;
+
+        
+    
+    
+            var circle_marker_0c3faf60e9c46b6bd3a73909e5370d42 = L.circleMarker(
+                [-21.179511636651267, 55.35572331446769],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_b1180c1a663795192bf601225d755a4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c2f5c8d3469603762f30474d0dbc570 = $(`<div id="html_2c2f5c8d3469603762f30474d0dbc570" style="width: 100.0%; height: 100.0%;">Saint-Leu | 1 habitants | 2858 m de l'arrêt le plus proche</div>`)[0];
+                popup_b1180c1a663795192bf601225d755a4f.setContent(html_2c2f5c8d3469603762f30474d0dbc570);
+            
+        
+
+        circle_marker_0c3faf60e9c46b6bd3a73909e5370d42.bindPopup(popup_b1180c1a663795192bf601225d755a4f)
+        ;
+
+        
+    
+    
+            var circle_marker_c50f66336985574cc4bd318f253d8c6c = L.circleMarker(
+                [-21.163254527518717, 55.355902995669034],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_411625fb95d6dad6b54e9ccbb3e0cfb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5fa2bfca54847b0f7987a1522c37c12 = $(`<div id="html_c5fa2bfca54847b0f7987a1522c37c12" style="width: 100.0%; height: 100.0%;">Saint-Leu | 4 habitants | 2798 m de l'arrêt le plus proche</div>`)[0];
+                popup_411625fb95d6dad6b54e9ccbb3e0cfb2.setContent(html_c5fa2bfca54847b0f7987a1522c37c12);
+            
+        
+
+        circle_marker_c50f66336985574cc4bd318f253d8c6c.bindPopup(popup_411625fb95d6dad6b54e9ccbb3e0cfb2)
+        ;
+
+        
+    
+    
+            var circle_marker_881e9dfd7cf2617a95e96cd7a19ba658 = L.circleMarker(
+                [-21.15049745635, 55.344489450082364],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_bdce1da49d6c38a69bcdb7b374ec1450 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91c3c813454800895612f48f68c025df = $(`<div id="html_91c3c813454800895612f48f68c025df" style="width: 100.0%; height: 100.0%;">Saint-Leu | 2 habitants | 2021 m de l'arrêt le plus proche</div>`)[0];
+                popup_bdce1da49d6c38a69bcdb7b374ec1450.setContent(html_91c3c813454800895612f48f68c025df);
+            
+        
+
+        circle_marker_881e9dfd7cf2617a95e96cd7a19ba658.bindPopup(popup_bdce1da49d6c38a69bcdb7b374ec1450)
+        ;
+
+        
+    
+    
+            var circle_marker_32f8191b4430d750ad7a53151db0b77d = L.circleMarker(
+                [-21.148709941259945, 55.34643503061659],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_42ebde9d89a83801aa5539ebb6ab1ef2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7175d7e07baab5815f0ac8dbbb6847cc = $(`<div id="html_7175d7e07baab5815f0ac8dbbb6847cc" style="width: 100.0%; height: 100.0%;">Saint-Leu | 1 habitants | 2295 m de l'arrêt le plus proche</div>`)[0];
+                popup_42ebde9d89a83801aa5539ebb6ab1ef2.setContent(html_7175d7e07baab5815f0ac8dbbb6847cc);
+            
+        
+
+        circle_marker_32f8191b4430d750ad7a53151db0b77d.bindPopup(popup_42ebde9d89a83801aa5539ebb6ab1ef2)
+        ;
+
+        
+    
+    
+            var circle_marker_8c08122709daaa7f45e7f3534f7d7d72 = L.circleMarker(
+                [-21.14140916918701, 55.33881361376949],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_c4f64fc3229b186e7bdbc898c134d1de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aabb772f7ef4f458a34fe52a532f0fc7 = $(`<div id="html_aabb772f7ef4f458a34fe52a532f0fc7" style="width: 100.0%; height: 100.0%;">Saint-Leu | 3 habitants | 2041 m de l'arrêt le plus proche</div>`)[0];
+                popup_c4f64fc3229b186e7bdbc898c134d1de.setContent(html_aabb772f7ef4f458a34fe52a532f0fc7);
+            
+        
+
+        circle_marker_8c08122709daaa7f45e7f3534f7d7d72.bindPopup(popup_c4f64fc3229b186e7bdbc898c134d1de)
+        ;
+
+        
+    
+    
+            var circle_marker_58c6af23f3b7ce89e5131cee9cbef271 = L.circleMarker(
+                [-21.13960283267799, 55.338833752340356],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_dcd848e0cd5e4fe7cb89311a10216ed1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61da783bfea39d3384bc6d1a57a3d0e1 = $(`<div id="html_61da783bfea39d3384bc6d1a57a3d0e1" style="width: 100.0%; height: 100.0%;">Saint-Leu | 2 habitants | 2185 m de l'arrêt le plus proche</div>`)[0];
+                popup_dcd848e0cd5e4fe7cb89311a10216ed1.setContent(html_61da783bfea39d3384bc6d1a57a3d0e1);
+            
+        
+
+        circle_marker_58c6af23f3b7ce89e5131cee9cbef271.bindPopup(popup_dcd848e0cd5e4fe7cb89311a10216ed1)
+        ;
+
+        
+    
+    
+            var circle_marker_69d0f1e3c075a649759617f68bfb2075 = L.circleMarker(
+                [-21.132301766070295, 55.33121316633008],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_180ee35b17341fcc1f0e2dc278aee603 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd65455ac28fab9654f112ffc436d7dd = $(`<div id="html_dd65455ac28fab9654f112ffc436d7dd" style="width: 100.0%; height: 100.0%;">Saint-Leu | 4 habitants | 2040 m de l'arrêt le plus proche</div>`)[0];
+                popup_180ee35b17341fcc1f0e2dc278aee603.setContent(html_dd65455ac28fab9654f112ffc436d7dd);
+            
+        
+
+        circle_marker_69d0f1e3c075a649759617f68bfb2075.bindPopup(popup_180ee35b17341fcc1f0e2dc278aee603)
+        ;
+
+        
+    
+    
+            var circle_marker_3edc74ccaaac2db9840f551cdb69941b = L.circleMarker(
+                [-21.132339668073172, 55.335063721558555],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_74536416acc0e18d0c1f2a739e1c769d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c064d29b81edb4d7dff5acf0a80fb4a1 = $(`<div id="html_c064d29b81edb4d7dff5acf0a80fb4a1" style="width: 100.0%; height: 100.0%;">Saint-Leu | 4 habitants | 2383 m de l'arrêt le plus proche</div>`)[0];
+                popup_74536416acc0e18d0c1f2a739e1c769d.setContent(html_c064d29b81edb4d7dff5acf0a80fb4a1);
+            
+        
+
+        circle_marker_3edc74ccaaac2db9840f551cdb69941b.bindPopup(popup_74536416acc0e18d0c1f2a739e1c769d)
+        ;
+
+        
+    
+    
+            var circle_marker_e49f31d8f686c4e1607f5df7f93012e9 = L.circleMarker(
+                [-21.13243404040873, 55.34469014693984],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_10c05c7b10a41c12c7569cc3a48d39a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8013d55f3675d287b600b712e206a9e0 = $(`<div id="html_8013d55f3675d287b600b712e206a9e0" style="width: 100.0%; height: 100.0%;">Saint-Leu | 2 habitants | 3183 m de l'arrêt le plus proche</div>`)[0];
+                popup_10c05c7b10a41c12c7569cc3a48d39a1.setContent(html_8013d55f3675d287b600b712e206a9e0);
+            
+        
+
+        circle_marker_e49f31d8f686c4e1607f5df7f93012e9.bindPopup(popup_10c05c7b10a41c12c7569cc3a48d39a1)
+        ;
+
+        
+    
+    
+            var circle_marker_046eceef0c4a1cd43b77a296873621f3 = L.circleMarker(
+                [-21.126977334997495, 55.340899877879224],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_3341e2520c9aeba23da66431b4f1c146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57bedda7814e0a08b74a76a929b8a7dc = $(`<div id="html_57bedda7814e0a08b74a76a929b8a7dc" style="width: 100.0%; height: 100.0%;">Saint-Leu | 2 habitants | 3198 m de l'arrêt le plus proche</div>`)[0];
+                popup_3341e2520c9aeba23da66431b4f1c146.setContent(html_57bedda7814e0a08b74a76a929b8a7dc);
+            
+        
+
+        circle_marker_046eceef0c4a1cd43b77a296873621f3.bindPopup(popup_3341e2520c9aeba23da66431b4f1c146)
+        ;
+
+        
+    
+    
+            var circle_marker_0ece6c7ab67dfc41e8be35284409dbb3 = L.circleMarker(
+                [-21.103400414503685, 55.33153644782046],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_dc1cdc097b0b4fb4472dbdd2e5c0a06c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_626ff27675528ee9bce5b241df5b8990 = $(`<div id="html_626ff27675528ee9bce5b241df5b8990" style="width: 100.0%; height: 100.0%;">Trois-Bassins | 6 habitants | 2304 m de l'arrêt le plus proche</div>`)[0];
+                popup_dc1cdc097b0b4fb4472dbdd2e5c0a06c.setContent(html_626ff27675528ee9bce5b241df5b8990);
+            
+        
+
+        circle_marker_0ece6c7ab67dfc41e8be35284409dbb3.bindPopup(popup_dc1cdc097b0b4fb4472dbdd2e5c0a06c)
+        ;
+
+        
+    
+    
+            var circle_marker_1bac3d3a755d75dcfb66045ff2caf837 = L.circleMarker(
+                [-21.101594076604506, 55.33155663473967],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_c407704b4b217d4a06419d24690fa3f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ac5fc891020c305628ef4439f1b9473 = $(`<div id="html_0ac5fc891020c305628ef4439f1b9473" style="width: 100.0%; height: 100.0%;">Trois-Bassins | 5 habitants | 2285 m de l'arrêt le plus proche</div>`)[0];
+                popup_c407704b4b217d4a06419d24690fa3f0.setContent(html_0ac5fc891020c305628ef4439f1b9473);
+            
+        
+
+        circle_marker_1bac3d3a755d75dcfb66045ff2caf837.bindPopup(popup_c407704b4b217d4a06419d24690fa3f0)
+        ;
+
+        
+    
+    
+            var circle_marker_2332275a608a17d80a1fd7c959023cc6 = L.circleMarker(
+                [-21.102567375755093, 55.43357819792541],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_9ea71502b107418823725fc8ce3c7ca0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd8c854eca8f39bce1695ff15182915c = $(`<div id="html_bd8c854eca8f39bce1695ff15182915c" style="width: 100.0%; height: 100.0%;">Saint-Paul | 1 habitants | 5890 m de l'arrêt le plus proche</div>`)[0];
+                popup_9ea71502b107418823725fc8ce3c7ca0.setContent(html_bd8c854eca8f39bce1695ff15182915c);
+            
+        
+
+        circle_marker_2332275a608a17d80a1fd7c959023cc6.bindPopup(popup_9ea71502b107418823725fc8ce3c7ca0)
+        ;
+
+        
+    
+    
+            var circle_marker_0687b9385f556235d4d1cf5f9cd17edc = L.circleMarker(
+                [-21.10077871928817, 55.43552211694972],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_95d9840fbf7c68a3a6365acf5485e2c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee8b03c800895e66eb9e7afd1a5431be = $(`<div id="html_ee8b03c800895e66eb9e7afd1a5431be" style="width: 100.0%; height: 100.0%;">Saint-Paul | 13 habitants | 5945 m de l'arrêt le plus proche</div>`)[0];
+                popup_95d9840fbf7c68a3a6365acf5485e2c5.setContent(html_ee8b03c800895e66eb9e7afd1a5431be);
+            
+        
+
+        circle_marker_0687b9385f556235d4d1cf5f9cd17edc.bindPopup(popup_95d9840fbf7c68a3a6365acf5485e2c5)
+        ;
+
+        
+    
+    
+            var circle_marker_3b6095f09aa64812d66cec61e1fa9865 = L.circleMarker(
+                [-21.096156112166998, 55.329692373851366],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_1c80548192e5439eef32f5f76cd5e490 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f50eefdbb95110b501c89d8efc99619 = $(`<div id="html_2f50eefdbb95110b501c89d8efc99619" style="width: 100.0%; height: 100.0%;">Trois-Bassins | 1 habitants | 2137 m de l'arrêt le plus proche</div>`)[0];
+                popup_1c80548192e5439eef32f5f76cd5e490.setContent(html_2f50eefdbb95110b501c89d8efc99619);
+            
+        
+
+        circle_marker_3b6095f09aa64812d66cec61e1fa9865.bindPopup(popup_1c80548192e5439eef32f5f76cd5e490)
+        ;
+
+        
+    
+    
+            var circle_marker_9899de18bbcade812355043d069d7e99 = L.circleMarker(
+                [-21.089797410088245, 55.420237080945746],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_d205bb492fe316beb1ab8839228c8761 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fccfb33319c1904a886f8379fef26798 = $(`<div id="html_fccfb33319c1904a886f8379fef26798" style="width: 100.0%; height: 100.0%;">La Possession | 6 habitants | 3953 m de l'arrêt le plus proche</div>`)[0];
+                popup_d205bb492fe316beb1ab8839228c8761.setContent(html_fccfb33319c1904a886f8379fef26798);
+            
+        
+
+        circle_marker_9899de18bbcade812355043d069d7e99.bindPopup(popup_d205bb492fe316beb1ab8839228c8761)
+        ;
+
+        
+    
+    
+            var circle_marker_5a845a5a718ad209d09d1d50b4f178ab = L.circleMarker(
+                [-21.078958881150555, 55.42035165358295],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_1d33baba2d0fff083ff148fa07fae73b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35fc49f5637fdf2e5abdcacb46478542 = $(`<div id="html_35fc49f5637fdf2e5abdcacb46478542" style="width: 100.0%; height: 100.0%;">La Possession | 5 habitants | 3506 m de l'arrêt le plus proche</div>`)[0];
+                popup_1d33baba2d0fff083ff148fa07fae73b.setContent(html_35fc49f5637fdf2e5abdcacb46478542);
+            
+        
+
+        circle_marker_5a845a5a718ad209d09d1d50b4f178ab.bindPopup(popup_1d33baba2d0fff083ff148fa07fae73b)
+        ;
+
+        
+    
+    
+            var circle_marker_8496c1cc206cb8a9d2df1426bda41306 = L.circleMarker(
+                [-21.077170362210946, 55.42229539283421],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_b265a4ab1cd2758b272dcaa6f149eab7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49f683f8785182c6fc555972a491f7c8 = $(`<div id="html_49f683f8785182c6fc555972a491f7c8" style="width: 100.0%; height: 100.0%;">La Possession | 8 habitants | 3664 m de l'arrêt le plus proche</div>`)[0];
+                popup_b265a4ab1cd2758b272dcaa6f149eab7.setContent(html_49f683f8785182c6fc555972a491f7c8);
+            
+        
+
+        circle_marker_8496c1cc206cb8a9d2df1426bda41306.bindPopup(popup_b265a4ab1cd2758b272dcaa6f149eab7)
+        ;
+
+        
+    
+    
+            var circle_marker_16ed4a540b817dedf16e42e4a22754f2 = L.circleMarker(
+                [-21.077188244355575, 55.42422004574612],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_ae3aa8c007259cf04f3348f9d4f09253 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f8ad2a07cdbbb1b62e41c83baca807a = $(`<div id="html_4f8ad2a07cdbbb1b62e41c83baca807a" style="width: 100.0%; height: 100.0%;">La Possession | 17 habitants | 3861 m de l'arrêt le plus proche</div>`)[0];
+                popup_ae3aa8c007259cf04f3348f9d4f09253.setContent(html_4f8ad2a07cdbbb1b62e41c83baca807a);
+            
+        
+
+        circle_marker_16ed4a540b817dedf16e42e4a22754f2.bindPopup(popup_ae3aa8c007259cf04f3348f9d4f09253)
+        ;
+
+        
+    
+    
+            var circle_marker_3ecc4b3a611e0f34478ff540d47d93e8 = L.circleMarker(
+                [-21.071786818536832, 55.42620174455548],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_f711e51e5392a5f4159c73bb1c204b28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45474c4dc85c4a06041106e914ece622 = $(`<div id="html_45474c4dc85c4a06041106e914ece622" style="width: 100.0%; height: 100.0%;">La Possession | 3 habitants | 4017 m de l'arrêt le plus proche</div>`)[0];
+                popup_f711e51e5392a5f4159c73bb1c204b28.setContent(html_45474c4dc85c4a06041106e914ece622);
+            
+        
+
+        circle_marker_3ecc4b3a611e0f34478ff540d47d93e8.bindPopup(popup_f711e51e5392a5f4159c73bb1c204b28)
+        ;
+
+        
+    
+    
+            var circle_marker_b7fbec80061a30447bd29dad5e53d905 = L.circleMarker(
+                [-21.048159925266646, 55.41105451365473],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_4b753b5c486ab160f3b82b7087fcc9e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8263366f775bf4ff1f2302230f9b566d = $(`<div id="html_8263366f775bf4ff1f2302230f9b566d" style="width: 100.0%; height: 100.0%;">La Possession | 2 habitants | 3578 m de l'arrêt le plus proche</div>`)[0];
+                popup_4b753b5c486ab160f3b82b7087fcc9e4.setContent(html_8263366f775bf4ff1f2302230f9b566d);
+            
+        
+
+        circle_marker_b7fbec80061a30447bd29dad5e53d905.bindPopup(popup_4b753b5c486ab160f3b82b7087fcc9e4)
+        ;
+
+        
+    
+    
+            var circle_marker_60687dda1dfef74679d81ceda9a27af8 = L.circleMarker(
+                [-21.042686586776775, 55.40533943026001],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_68ddd6f6ff9214696ee0e0c92d4fcc3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2664b3f9433d4451b15e9078099fc15b = $(`<div id="html_2664b3f9433d4451b15e9078099fc15b" style="width: 100.0%; height: 100.0%;">La Possession | 4 habitants | 3485 m de l'arrêt le plus proche</div>`)[0];
+                popup_68ddd6f6ff9214696ee0e0c92d4fcc3e.setContent(html_2664b3f9433d4451b15e9078099fc15b);
+            
+        
+
+        circle_marker_60687dda1dfef74679d81ceda9a27af8.bindPopup(popup_68ddd6f6ff9214696ee0e0c92d4fcc3e)
+        ;
+
+        
+    
+    
+            var circle_marker_5974147dd1c5dad048e36d5a078c4c80 = L.circleMarker(
+                [-21.039073751544727, 55.40537789502801],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_ef0e8ba6f2d78a689d9299c5d99addcd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09b036c3f6f296d6d7def953500d78cc = $(`<div id="html_09b036c3f6f296d6d7def953500d78cc" style="width: 100.0%; height: 100.0%;">La Possession | 1 habitants | 3750 m de l'arrêt le plus proche</div>`)[0];
+                popup_ef0e8ba6f2d78a689d9299c5d99addcd.setContent(html_09b036c3f6f296d6d7def953500d78cc);
+            
+        
+
+        circle_marker_5974147dd1c5dad048e36d5a078c4c80.bindPopup(popup_ef0e8ba6f2d78a689d9299c5d99addcd)
+        ;
+
+        
+    
+    
+            var circle_marker_158a13c82d11ecf902591ca0fcc0bafe = L.circleMarker(
+                [-21.039271025945716, 55.42654362712791],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_3b7d4dbbfe1a0d81a3113f14f77919d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8230a2890a464cb18649126f192cec91 = $(`<div id="html_8230a2890a464cb18649126f192cec91" style="width: 100.0%; height: 100.0%;">La Possession | 1 habitants | 5421 m de l'arrêt le plus proche</div>`)[0];
+                popup_3b7d4dbbfe1a0d81a3113f14f77919d9.setContent(html_8230a2890a464cb18649126f192cec91);
+            
+        
+
+        circle_marker_158a13c82d11ecf902591ca0fcc0bafe.bindPopup(popup_3b7d4dbbfe1a0d81a3113f14f77919d9)
+        ;
+
+        
+    
+    
+            var circle_marker_c45b856620c47c249761f0601de3daaa = L.circleMarker(
+                [-21.035460914711187, 55.4054163516363],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_dbb7ffa084e2e956df4bf4e80762e72e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb20ac8b4b965c17b9bf09b58eefb6c5 = $(`<div id="html_bb20ac8b4b965c17b9bf09b58eefb6c5" style="width: 100.0%; height: 100.0%;">La Possession | 4 habitants | 4037 m de l'arrêt le plus proche</div>`)[0];
+                popup_dbb7ffa084e2e956df4bf4e80762e72e.setContent(html_bb20ac8b4b965c17b9bf09b58eefb6c5);
+            
+        
+
+        circle_marker_c45b856620c47c249761f0601de3daaa.bindPopup(popup_dbb7ffa084e2e956df4bf4e80762e72e)
+        ;
+
+        
+    
+    
+            var circle_marker_1ea2bda950c656280b5377f8df8e6bf1 = L.circleMarker(
+                [-21.021171001996944, 55.42288541028747],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_d3d062457f63abb7354c336dfd135edf);
+        
+    
+        var popup_fa596a8bbc35eee15e8394b8dd36c5fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c0f1cbe4c28bd427637ae0b02fd456c = $(`<div id="html_3c0f1cbe4c28bd427637ae0b02fd456c" style="width: 100.0%; height: 100.0%;">La Possession | 14 habitants | 5193 m de l'arrêt le plus proche</div>`)[0];
+                popup_fa596a8bbc35eee15e8394b8dd36c5fb.setContent(html_3c0f1cbe4c28bd427637ae0b02fd456c);
+            
+        
+
+        circle_marker_1ea2bda950c656280b5377f8df8e6bf1.bindPopup(popup_fa596a8bbc35eee15e8394b8dd36c5fb)
+        ;
+
+        
+    
+</script>
+</html>
