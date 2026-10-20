@@ -1,0 +1,41 @@
+[2025-12-23 14:36:50] 	[Info]		Les fichiers vont être générés dans le répertoire '/heures/documents/GTFS/'.
+
+[2025-12-23 14:36:50] 	[Info]		Sites = deflt
+[2025-12-23 14:36:50] 	[Info]		Période de génération = 01/01/2026 - 31/12/2026
+
+[2025-12-23 14:36:50] 	[Info]		Les fichiers suivants vont être générés :
+[2025-12-23 14:36:50] 	[Info]			- stops
+[2025-12-23 14:36:50] 	[Info]			- calendar
+[2025-12-23 14:36:50] 	[Info]			- trips
+[2025-12-23 14:36:50] 	[Info]			- calendar_dates
+[2025-12-23 14:36:50] 	[Info]			- stop_times
+[2025-12-23 14:36:50] 	[Info]			- shapes
+[2025-12-23 14:36:50] 	[Info]			- routes
+[2025-12-23 14:36:50] 	[Info]			- agency
+[2025-12-23 14:36:50] 	[Info]			- feed_info
+ 
+***********************************************************************************
+ 
+[2025-12-23 14:36:50] 	[Info]		Génération des fichiers pour la période du 01/01/2026 au 31/12/2026
+ 
+***********************************************************************************
+ 
+[2025-12-23 14:36:50] 	[Info]		Version de date utilisée : default version
+[2025-12-23 14:36:50] 	[Info]		Traitement des données...
+[2025-12-23 14:36:52] 	[Info]		Il y a 2 habillages différents sur la période.
+[2025-12-23 14:36:53] 	[Info]		Il y a 717 courses différentes sur la période.
+[2025-12-23 14:36:53] 	[Info]		Il y a 2 calendrier différents sur la période.
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'agency.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'calendar.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'calendar_dates.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'trips.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'routes.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'stop_times.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'stops.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'shapes.txt'...
+[2025-12-23 14:36:53] 	[Info]		Génération du fichier 'feed_info.txt'...
+[2025-12-23 14:36:53] 	[Info]		Durée de la génération : 2.76647s
+ 
+***********************************************************************************
+ 
+[2025-12-23 14:36:53] 	[Info]		La génération des fichiers est terminée.

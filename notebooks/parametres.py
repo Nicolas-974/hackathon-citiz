@@ -12,7 +12,7 @@ RACINE = Path(__file__).resolve().parent.parent / "data"
 BRONZE = RACINE / "bronze"
 SILVER = RACINE / "silver"
 GTFS_DIR = BRONZE / "gtfs"
-INSEE_CSV = BRONZE / "insee" / "carreaux_200m_reun.csv"
+INSEE_CSV = BRONZE / "insee" / "carreaux_200m_reun.csv"   # même fichier : il couvre toute l'île
 RESULTATS_DIR = RACINE.parent / "resultats"
 CARTES_DIR = RESULTATS_DIR / "cartes"
 
@@ -22,24 +22,59 @@ CARTES_DIR = RESULTATS_DIR / "cartes"
 FOND_CARTE = "Esri.WorldGrayCanvas"
 
 # --- Périmètre étudié -----------------------------------------------------------
-# Choix du périmètre, pas une règle de score : pour le Nord, on change cette liste.
-TERRITOIRE = "Ouest (TCO)"
+# Choix du périmètre, pas une règle de score.
+# Toute l'île : les 24 communes. Pour revenir à un zoom, ne garder que les communes voulues
+# (Ouest/TCO : 97407, 97408, 97413, 97415, 97423).
+TERRITOIRE = "La Réunion (île entière)"
 COMMUNES = {
+    # Nord - CINOR
+    "97411": "Saint-Denis",
+    "97418": "Sainte-Marie",
+    "97420": "Sainte-Suzanne",
+    # Est - CIREST
+    "97402": "Bras-Panon",
+    "97406": "La Plaine-des-Palmistes",
+    "97409": "Saint-André",
+    "97410": "Saint-Benoît",
+    "97419": "Sainte-Rose",
+    "97421": "Salazie",
+    # Ouest - TCO
     "97407": "Le Port",
     "97408": "La Possession",
     "97413": "Saint-Leu",
     "97415": "Saint-Paul",
     "97423": "Trois-Bassins",
+    # Sud-Ouest - CIVIS
+    "97401": "Les Avirons",
+    "97404": "L'Étang-Salé",
+    "97405": "Petite-Île",
+    "97414": "Saint-Louis",
+    "97416": "Saint-Pierre",
+    "97424": "Cilaos",
+    # Sud - CASUD
+    "97403": "Entre-Deux",
+    "97412": "Saint-Joseph",
+    "97417": "Saint-Philippe",
+    "97422": "Le Tampon",
 }
 
 # Réseaux GTFS pris en compte : nom affiché -> sous-dossier de GTFS_DIR.
 # Un réseau dont le dossier est absent est ignoré (avec un message), pas bloquant.
+# Un seul dossier par réseau : seuls les dossiers listés ici sont lus, donc l'ancienne
+# copie manuelle "karouest" peut rester sur le disque sans être comptée deux fois.
 RESEAUX = {
-    "Kar'Ouest": "karouest",
-    "Car Jaune": "car_jaune",
+    "Car Jaune": "car_jaune",                         # interurbain, toute l'île
+    "Kar'Ouest": "kar_ouest",                         # TCO (version téléchargée automatiquement)
+    "Citalis": "citalis_bus",                         # CINOR
+    "Téléphérique Citalis": "citalis_telepherique",   # CINOR (Papang, Saint-Denis)
+    "Estival": "estival",                             # CIREST
+    "Alternéo": "alterneo",                           # CIVIS
+    "Car Sud": "car_sud",                             # CASUD
 }
 
 # Jour de référence pour compter les passages : un mardi ordinaire (AAAAMMJJ, format GTFS).
+# ⚠️ Il doit être couvert par le calendrier des 7 réseaux : vérifier la sortie du notebook 01
+# (un réseau à 0 service ferait apparaître toute son intercommunalité "sans bus").
 DATE_REF = 20261020
 
 # --- Carreaux INSEE -------------------------------------------------------------
@@ -69,5 +104,7 @@ POIDS_BESOIN = {
 RAYON_STATION_M = 500        # hypothèse : distance acceptée à pied jusqu'à une voiture (à sourcer)
 
 # --- Optimisation sous budget ---------------------------------------------------
+# Budget inchangé (10 stations à 30 k€) : sur l'île entière, la sélection se répartit
+# désormais entre les territoires. À ajuster en démo dans le notebook 05.
 BUDGET_EUR = 300_000
 COUT_STATION_EUR = 30_000    # PROVISOIRE, NON SOURCÉ : à remplacer par le chiffrage de l'équipe
