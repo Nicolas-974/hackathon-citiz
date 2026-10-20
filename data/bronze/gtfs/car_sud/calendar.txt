@@ -1,0 +1,6 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+2026CASUD-caRsud19-Lun-Sam-04,1,1,1,1,1,1,0,20260820,20270831
+2026CASUD-caRsud19-Lun-Sam-04-1111010,1,1,1,1,0,1,0,20260820,20270831
+2026CASUD-caRsud19-Lun-Sam-04-0000100,0,0,0,0,1,0,0,20260820,20270831
+2026CASUD-caRsud19-Dimanche-01,0,0,0,0,0,0,1,20260823,20270829
+2026CASUD-carRud19-Fête-1-01,1,1,1,1,1,1,1,20261101,20270815
